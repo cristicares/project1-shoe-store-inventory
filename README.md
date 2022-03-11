@@ -3,6 +3,8 @@
 This application was built based on the instructions presented below to be evaluated.
 The app allows you to have a list of shoes where you can see the details of each one, where you will find information such as name, brand, size and a brief description. You can also add new items to the general list with the above data.
 
+![](https://github.com/cristicares/project1-shoe-store-inventory/blob/main/demo.gif)
+
 ## Getting Started
 
 You can clone the project and after the build is done, run the app on an emulator or physical device, considers that `minSdkVersion 22` and `compileSdkVersion 30`
