@@ -1,7 +1,7 @@
 # Shoe Store Inventory App
 
 This application was built based on the instructions presented below to be evaluated.
-The app allows you to have a list of shoes where you can see the details of each one, where you will find information such as name, brand, size and a brief description. You can also add new items to the general list with the above data
+The app allows you to have a list of shoes where you can see the details of each one, where you will find information such as name, brand, size and a brief description. You can also add new items to the general list with the above data.
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ This project will consist of five screens. You don't have to create a shoe store
 4. Shoe Listing screen
 5. Shoe Detail screen for adding a new shoe
 
-##Steps
+## Steps
 
 1. Open the starter project in Android Studio
 
