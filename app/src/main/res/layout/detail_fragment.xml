@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+I used LinearLayout here because I needed to add several
+components in a vertical order with two columns
+and this is the healthy way for the add new shoe form
+-->
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".screens.DetailFragment">
+
+    <data>
+        <variable
+            name="shoe"
+            type="com.udacity.shoestore.models.Shoe" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/large_margin"
+        android:layout_marginEnd="@dimen/large_margin"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/name" />
+
+                <EditText
+                    android:id="@+id/name_edit"
+                    android:layout_span="2"
+                    android:hint="@string/shoe_name_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textShortMessage"
+                    android:minHeight="48dp"
+                    android:text="@={shoe.name}" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/company" />
+
+                <EditText
+                    android:id="@+id/company_edit"
+                    android:layout_span="2"
+                    android:autofillHints=""
+                    android:hint="@string/shoe_company_hint"
+                    android:inputType="textCapWords"
+                    android:minHeight="48dp"
+                    android:text="@={shoe.company}" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/size" />
+
+                <EditText
+                    android:id="@+id/size_edit"
+                    android:layout_span="2"
+                    android:hint="@string/shoe_size_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp"
+                    android:text="@={``+shoe.size}" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="@string/description" />
+
+                <EditText
+                    android:id="@+id/description_edit"
+                    android:layout_span="2"
+                    android:hint="@string/shoe_desc_hint"
+                    android:importantForAutofill="no"
+                    android:inputType="textShortMessage"
+                    android:minHeight="48dp"
+                    android:text="@={shoe.description}" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/save_button"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/save" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

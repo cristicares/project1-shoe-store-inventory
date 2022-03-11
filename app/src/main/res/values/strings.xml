@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Shoe Store</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="register">Register</string>
+    <string name="mail_hint">joecool@mail.com</string>
+    <!-- Strings related to welcome -->
+    <string name="welcome">"Welcome"</string>
+    <string name="welcome_first_paragraph">Welcome to Shoe Store App</string>
+    <string name="welcome_second_paragraph">This is the new way of selling shoes. Thanks to the virtual store, add shoes for sale and view them on the list, everything more organized and easier when it comes to serving customers.</string>
+    <string name="go_to_instruction">Go to Instructions</string>
+    <!-- Strings related to instructions -->
+    <string name="instructions">"Instructions"</string>
+    <string name="instructions_first_paragraph">"On the next screen, you will find the list of shoes in the store, with the photo of the model on the left side and its description on the right side."</string>
+    <string name="instructions_second_paragraph">To add new shoes to the list use the button, which is in the lower right corner</string>
+    <string name="instructions_third_paragraph">In the form to add a new shoe, you must include the model`s name, brand, and size. You can also include a optional description.</string>
+    <string name="get_started">Get started</string>
+    <!-- Strings related to listing -->
+    <string name="shoes_list">Shoes List</string>
+    <string name="add_new_shoe">Add New Shoe</string>
+    <string name="logout">Logout</string>
+    <!-- Strings related to detail -->
+    <string name="name">Name *</string>
+    <string name="company">Company *</string>
+    <string name="size">Size *</string>
+    <string name="description">Description </string>
+    <string name="cancel">cancel</string>
+    <string name="save">save</string>
+    <string name="shoe">shoe</string>
+    <string name="shoe_store">Shoe store</string>
+    <string name="shoe_name_hint">Air max 3.0</string>
+    <string name="shoe_desc_hint">Urban sneakers</string>
+    <string name="shoe_size_hint">8.5</string>
+    <string name="shoe_company_hint">Nike</string>
+</resources>
