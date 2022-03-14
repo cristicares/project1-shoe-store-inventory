@@ -32,7 +32,9 @@
         <action
             android:id="@+id/action_instructionsFragmentDestination_to_listingFragment"
             app:destination="@id/listingFragmentDestination"
-            app:enterAnim="@anim/slide_in_right" />
+            app:enterAnim="@anim/slide_in_right"
+            app:popUpTo="@id/loginFragmentDestination"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
         android:id="@+id/listingFragmentDestination"
@@ -52,6 +54,8 @@
         <action
             android:id="@+id/action_detailFragmentDestination_to_listingFragmentDestination"
             app:destination="@id/listingFragmentDestination"
-            app:exitAnim="@anim/slide_out_down" />
+            app:exitAnim="@anim/slide_out_down"
+            app:popUpTo="@id/listingFragmentDestination"
+            app:popUpToInclusive="true" />
     </fragment>
 </navigation>
